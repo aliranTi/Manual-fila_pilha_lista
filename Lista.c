@@ -19,7 +19,6 @@ int remover(Lista *l);
 int remover_fim(Lista *l);
 void inserir_no_inicio(Lista *l, int dado);
 
-
 Lista * criar_lista() {
     Lista *l = (Lista *) malloc(sizeof(Lista));
     l->inicio = NULL;

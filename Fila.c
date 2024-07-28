@@ -11,6 +11,13 @@ typedef struct fila {
     No *fim;
 } Fila;
 
+Fila * criar_fila();
+int fila_vazia(Fila *f);
+int enfileirar(Fila *f, int dado);
+int desenfileirar(Fila *f);
+void percorrer_fila(Fila *f);
+
+
 Fila * criar_fila() {
     Fila *f = (Fila *) malloc(sizeof(Fila));
     f->inicio = NULL;

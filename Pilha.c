@@ -10,6 +10,13 @@ typedef struct pilha {
     No * topo;
 } Pilha;
 
+Pilha * criar_pilha();
+void percorrer_pilha(Pilha *p);
+int pilha_vazia(Pilha *p);
+int empilhar(Pilha *p, int dado);
+int desempilhar(Pilha *p);
+
+
 Pilha * criar_pilha() {
     Pilha *p = (Pilha *) malloc(sizeof(Pilha));
     p->topo = NULL;
